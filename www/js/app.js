@@ -25,15 +25,15 @@ angular.module('starter', ['ionic', 'ngCordova'])
   });
 })
 
-.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider
-    .state('home', {
-        url: '/home',
-        templateUrl: 'views/home.html',
-        controller: 'HomeCtrl'
-    });
-    $urlRouterProvider.otherwise('/home');
-})
+//.config(function ($stateProvider, $urlRouterProvider) {
+//    $stateProvider
+//    .state('home', {
+//        url: '/home',
+//        templateUrl: 'views/home.html',
+//        controller: 'HomeCtrl'
+//    });
+//    $urlRouterProvider.otherwise('/home');
+//})
 
 .controller('HomeCtrl', ['$scope', '$cordovaBarcodeScanner', '$ionicPlatform', function ($scope, $cordovaBarcodeScanner, $ionicPlatform) {
 
